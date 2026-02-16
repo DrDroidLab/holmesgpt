@@ -1,4 +1,4 @@
-user_prompt: What is the issue with customer-relations-webapp?
+user_prompt: What is the issue with customer-relations-webapp in Azure Prod cluster?
 expected_output:
   - The Docker image `yourcompany/crw:latest` cannot be pulled
 before_test: |

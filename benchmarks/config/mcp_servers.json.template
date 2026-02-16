@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "kubernetes": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-kubernetes"],
+      "env": {
+        "KUBECONFIG": "~/.kube/config"
+      }
+    },
+    "prometheus": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-prometheus"],
+      "env": {
+        "PROMETHEUS_URL": "http://localhost:9090"
+      }
+    },
+    "grafana": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-grafana"],
+      "env": {
+        "GRAFANA_URL": "http://localhost:3000",
+        "GRAFANA_API_KEY": "your-grafana-api-key"
+      }
+    },
+    "datadog": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-datadog"],
+      "env": {
+        "DD_API_KEY": "your-datadog-api-key",
+        "DD_APP_KEY": "your-datadog-app-key"
+      }
+    },
+    "elasticsearch": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-elasticsearch"],
+      "env": {
+        "ELASTICSEARCH_URL": "http://localhost:9200",
+        "ELASTICSEARCH_API_KEY": "your-elasticsearch-api-key"
+      }
+    }
+  }
+}

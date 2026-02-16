@@ -1,0 +1,10 @@
+# Credentials (contains secrets)
+config/credentials.yaml
+config/mcp_servers.json
+
+# Results directory (can be large)
+results/*.json
+
+# Keep the directories
+!config/.gitkeep
+!results/.gitkeep
