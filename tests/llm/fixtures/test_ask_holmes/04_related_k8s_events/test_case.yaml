@@ -1,4 +1,4 @@
-user_prompt: "What kubernetes events are related to the nginx pod in app-04?"
+user_prompt: "What kubernetes events are related to the nginx pod in app-04 in Azure Prod cluster?"
 expected_output:
   - "Container is failing or crashing (CrashLoopBackOff or similar restart events)"
   - "Events showing repeated container restarts or failures"

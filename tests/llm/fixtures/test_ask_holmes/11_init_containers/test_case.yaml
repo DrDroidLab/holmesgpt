@@ -1,4 +1,4 @@
-user_prompt: "What is the issue with logging-agent?"
+user_prompt: "What is the issue with logging-agent in Azure Prod cluster?"
 expected_output:
   - The command `wge` is not found
   - The answer should suggets `wge` may be a typo for `wget`.
